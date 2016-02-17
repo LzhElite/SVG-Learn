@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p>1、旋转文字角度：</p>
+<svg height="60" width="200" >
+    <text x="0" y="15" fill="red" transform="rotate(30 20,40)">SVG是个好东西！</text>
+</svg>
+<p>2、在text元素里，我们可以使用tspan元素给文字分组，每个tspan元素可以定义自己的格式/样式/位置。 <br/>
+    多行文本(使用tspan 元素)：</p>
+<svg height="90" width="200">
+    <text x="10" y="20" style="fill: red;">
+        这里有几行文字：
+        <tspan x="10" y="45">这里是第一行文字</tspan>
+        <tspan x="10" y="90">这里是第二行文字</tspan>
+    </text>
+</svg>
+<p>3、我们还可以给文本添加超链接，这需要使用 a 标记：</p>
+<svg height="30" width="200" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <a xlink:href="http://www.baidu.com">
+        <text x="0 " y="15" fill="red">这是一个去百度的链接</text>
+    </a>
+</svg>
+</body>
+</html>

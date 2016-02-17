@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .classA {
+            fill:red;
+        }
+    </style>
+</head>
+<body>
+
+<p>
+    use标记的作用是能从SVG文档内部取出一个节点，克隆它，并把它输出到别处。跟‘引用’很相似，但它是深度克隆。
+</p>
+<svg width="100%" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox='0 0 50 100'>
+
+    <defs>
+        <g id="Port">
+            <circle style="fill: inherit" r="10"/>
+        </g>
+    </defs>
+
+    <text y="15">black</text>
+    <use x="50" y="10" xlink:href="#Port"/>
+    <text y="35">red</text>
+    <use x="50" y="30" xlink:href="#Port" class="classA"/>
+    <text y="55">black</text>
+    <use x="50" y="50" xlink:href="#Port" style="fill: blue"/>
+</svg>
+
+</body>
+</html>

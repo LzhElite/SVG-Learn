@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p>
+    SVG里关于图形边框/边线的属性有不少，这里，我们将主要介绍下面这几个：<br/>
+    stroke 边框颜色<br/>
+    stroke-width 边框宽度<br/>
+    stroke-linecap 线条帽子<br/>
+    stroke-dasharray 点<br/>
+    所有这些边框属性都可以应用于各种图形/文本/线条中。 <br/>
+</p>
+<svg height="80" width="300">
+    <g fill="none">
+        <path stroke="red" stroke-width="2" stroke-linecap="butt" stroke-dasharray="5 5" d="M5 20 l215 0"></path>
+        <path stroke="black" stroke-width="2" stroke-linecap="round" stroke-dasharray="10 10" d="M5 40 l215 0"></path>
+        <path stroke="blue" stroke-width="2" stroke-linecap="square" stroke-dasharray="20 10 5 5 5 10" d="M5 60 l215 0"></path>
+    </g>
+</svg>
+</body>
+</html>
